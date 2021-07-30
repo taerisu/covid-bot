@@ -1,0 +1,17 @@
+{
+  "name": "covid-bot",
+  "version": "1.0.0",
+  "description": "Discord bot that displays covid-19 data.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "Zamur650",
+  "license": "MIT",
+  "dependencies": {
+    "@iamtraction/google-translate": "^1.1.2",
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
+  }
+}
