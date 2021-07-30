@@ -37,12 +37,12 @@ client.on('message', async message => {
       .setTitle(response.Country)
       .setURL('https://xn--80aesfpebagmfblc0a.xn--p1ai/')
       .addFields(
-        { name: 'Новых заражений', value: response.NewConfirmed, inline: true },
-        { name: 'Новых смертей', value: response.NewDeaths, inline: true },
-        { name: 'Новых вылечено', value: response.NewRecovered, inline: true },
-        { name: 'Всего заражений', value: response.TotalConfirmed, inline: true },
-        { name: 'Всего смертей', value: response.TotalDeaths, inline: true },
-        { name: 'Всего вылечено', value: response.TotalRecovered, inline: true }
+        { name: 'Заражений сегодня', value: response.NewConfirmed, inline: true },
+        { name: 'Смертей сегодня', value: response.NewDeaths, inline: true },
+        { name: 'Вылечено сегодня', value: response.NewRecovered, inline: true },
+        { name: 'Заражений за все время', value: response.TotalConfirmed, inline: true },
+        { name: 'Смертей за все время', value: response.TotalDeaths, inline: true },
+        { name: 'Вылечено за все время', value: response.TotalRecovered, inline: true }
       )
       .setTimestamp()
 

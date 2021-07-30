@@ -1,9 +1,8 @@
 # covid-bot
 
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="icon.png" alt="Bot logo"></a>
-</p>
+[![Icon](assets/icon.png)](https://xn--80aesfpebagmfblc0a.xn--p1ai/)
+
+[Invite](https://discord.com/oauth2/authorize?client_id=869884634589179935&permissions=0&scope=bot)
 
 ## Table of Contents
 
@@ -35,10 +34,9 @@ Install dependencies
 npm i
 ```
 
-Write settings
+Write settings into .env
 
- as example
-[.env.example](.env.example)
+[.env.example](.env.example) as example
 
 Start bot
 
@@ -51,7 +49,5 @@ npm run start
 Write *covid (country name / nothing for world)
 
 ### Demo
-<p align="center">
-  <a href="demo.jpg" rel="noopener">
- <img width=200px height=200px src="demo.jpg" alt="Bot logo"></a>
-</p>
+
+[![Demo](assets/demo.jpg)](https://discord.com/oauth2/authorize?client_id=869884634589179935&permissions=0&scope=bot)
