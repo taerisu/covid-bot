@@ -6,8 +6,9 @@ require('dotenv').config()
 
 const client = new Discord.Client()
 
-client.once('ready', () => {
-	console.log('Ready!')
+client.on('ready', () => {
+  console.log(`Захожу как: ${client.user.tag}!`)
+  client.user.setActivity(`${process.env.PREFIX}covid - get info about covid`)
 })
 
 client.on('message', async message => {
@@ -47,6 +48,15 @@ client.on('message', async message => {
 
     message.channel.send(Embed);
 	}
+})
+
+client.on('reconnecting', () => {
+  console.log(`Захожу как: ${client.user.tag}!`)
+  client.user.setActivity(`${process.env.PREFIX}covid - get info about covid`)
+})
+
+client.on('disconnect', () => {
+  console.warn(`Вышел как: ${client.user.tag}!`)
 })
 
 client.login(process.env.TOKEN)
